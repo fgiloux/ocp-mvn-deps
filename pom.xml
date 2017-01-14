@@ -35,7 +35,7 @@
                 <type>war</type>
                 <overWrite>false</overWrite>
                 <!-- <outputDirectory>${project.build.directory}/alternateLocation</outputDirectory> -->
-                <outputDirectory>/deployments</outputDirectory>
+                <outputDirectory>/opt/webserver/webapps</outputDirectory>
                 <destFileName>binary-deployment.war</destFileName>
               </artifactItem>
             </artifactItems>
