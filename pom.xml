@@ -20,7 +20,7 @@
           <executions>
             <execution>
               <id>copy</id>
-              <phase>compile</phase>
+              <phase>package</phase>
               <goals>
                 <goal>copy</goal>
               </goals>
@@ -35,11 +35,10 @@
                 <type>war</type>
                 <overWrite>false</overWrite>
                 <!-- <outputDirectory>${project.build.directory}/alternateLocation</outputDirectory> -->
-                <outputDirectory>/opt/webserver/webapps</outputDirectory>
-                <destFileName>binary-deployment.war</destFileName>
+                <outputDirectory>target</outputDirectory>
+                <destFileName>jolokia.war</destFileName>
               </artifactItem>
             </artifactItems>
-            <!-- <outputDirectory>${project.build.directory}/wars</outputDirectory>-->
             <overWriteReleases>false</overWriteReleases>
             <overWriteSnapshots>true</overWriteSnapshots>
           </configuration>
